@@ -1,7 +1,10 @@
 # unet-segmentation-python
 Python wrapper around the unet cell segmentation by Thorsten Falk et al. (ImageJ plugin &amp; caffe backend, https://github.com/lmb-freiburg/Unet-Segmentation).
 
-# Disclaimer
+## current functions
+Takes 2D image inputs, applies 2D UNET models trained with the UNET ImageJ plugin, returns scores and segmentation results.
+
+## Disclaimer
 I only provide the wrapper, based on the original work by Falk et al.:
 
 Nature Methods publication:
