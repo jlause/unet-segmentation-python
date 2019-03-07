@@ -194,30 +194,3 @@ def run_unet_segmentation(input_img,img_pixelsize_x,img_pixelsize_y,
     return dict(preprocessed_img=np.squeeze(h5ready_img),
                 scores = np.squeeze(score),
                 segmentation_mask = np.squeeze(segmentation_mask))
-    
-    
-
-#import schema as sc
-#
-##datapoint link: get metadata and image
-#exp_id = 'hajdu_20180205_1'
-#z_id = 9 - 1 #to get to python index
-#resolution_x,resolution_y = (sc.Experiment & 'exp_id="%s"'%(exp_id)).fetch1('pixelsize_x','pixelsize_y')#
-#img = (sc.Field & 'exp_id="%s"'%(exp_id)).fetch1('image_stack')[z_id]
-##filepaths
-#io_path = '/mnt/B09A6F399A6EFAEC/code/immuno-analysis/code_datajoint/unet/element0.541full_inclPreupload/caffee_io_file.h5'
-##model_path = '/home/jan/unet/caffemodels/2d_cell_net_v0.modeldef.h5'
-##weight_path = '/home/jan/unet/caffemodels/2d_cell_net_v0.caffemodel.h5'
-#
-#model_path = '/home/jan/Desktop/finetuning/ft01/2dnet_v0_ft_segmentation_dataset_7.modeldef.h5'
-#weight_path = '/home/jan/Desktop/finetuning/ft01/2dnet_v0_ft_segmentation_dataset_7_weights.caffemodel.h5'
-#
-#output = run_unet_segmentation(input_img=img,
-#                                  img_pixelsize_x=resolution_x,
-#                                  img_pixelsize_y=resolution_y,
-#                                  modelfile_path=model_path,
-#                                  weightfile_path=weight_path,
-#                                  iofile_path=io_path)
-
-
-
